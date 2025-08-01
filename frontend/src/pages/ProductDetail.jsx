@@ -8,7 +8,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    axios.get(`https://e-commerce-backend-749j.onrender.com/products/${productId}`)
+    axios.get(`http://localhost:3000/products/${productId}`)
       .then((res) => setProduct(res.data));
   }, [productId]);
 

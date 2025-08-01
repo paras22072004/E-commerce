@@ -17,7 +17,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    axios.get("https://e-commerce-backend-749j.onrender.com/products")
+    axios.get("http://localhost:3000/products")
       .then((res) => {
         const filtered = searchTerm
           ? res.data.filter(p =>

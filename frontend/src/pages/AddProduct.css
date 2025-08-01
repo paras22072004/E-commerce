@@ -1,0 +1,135 @@
+
+
+.add-form {
+  max-width: 450px; 
+  margin: 30px auto; 
+  padding: 20px;
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif; 
+  color: #333;
+}
+
+.add-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 1.8em; 
+  font-weight: bold;
+}
+
+.add-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.add-form input[type="text"],
+.add-form input[type="number"],
+.add-form input[type="file"],
+.add-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #aaa;
+  border-radius: 3px; 
+  font-size: 0.9em;
+  color: #444;
+  box-sizing: border-box;
+}
+
+.add-form input[type="text"]:focus,
+.add-form input[type="number"]:focus,
+.add-form input[type="file"]:focus,
+.add-form textarea:focus {
+  border-color: #5cb85c; 
+  outline: none;
+}
+
+
+.add-form input[type="file"] {
+  padding: 5px;
+  background-color: #e9e9e9;
+  cursor: pointer;
+  border: 1px solid #999; 
+}
+
+
+
+.add-form input[type="file"]::before {
+  content: 'Select Image'; 
+  display: inline-block;
+  background: #5cb85c; 
+  color: white;
+  border: 1px solid #4cae4c; 
+  border-radius: 3px;
+  padding: 6px 12px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: normal; 
+  font-size: 0.85em;
+  margin-right: 8px;
+}
+
+.add-form input[type="file"]:hover::before {
+  background: #4cae4c; 
+}
+
+.add-form input[type="file"]:active::before {
+  background: #449d44; 
+}
+
+.add-form button[type="submit"] {
+  background-color: #007bff; 
+  color: white;
+  padding: 10px 15px;
+  border: none; 
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-form button[type="submit"]:hover {
+  background-color: #0056b3; 
+}
+
+
+
+@media (max-width: 768px) {
+  .add-form {
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .add-form h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-form {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .add-form h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
+
+  .add-form input,
+  .add-form button {
+    font-size: 0.8em;
+    padding: 7px 10px;
+  }
+
+  .add-form input[type="file"]::before {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
+}

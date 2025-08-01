@@ -1,0 +1,61 @@
+.detail-view {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail-view img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.detail-view h2 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.detail-view p {
+  font-size: 16px;
+  color: #444;
+  margin: 0.5rem 0;
+}
+
+.detail-view button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.detail-view button:hover {
+  background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+  .detail-view {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detail-view img {
+    width: 100%;
+    max-width: 300px;
+  }
+}

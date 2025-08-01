@@ -27,7 +27,7 @@ const AddProducts = () => {
     formData.append("description", product.description);
     formData.append("image", product.image); 
 
-    await axios.post("http://localhost:3000/products", formData);
+    await axios.post("https://e-commerce-backend-y934.onrender.com/products", formData);
     alert("Product added!");
     setProduct({ name: "", price: "", description: "", image: null });
   };
